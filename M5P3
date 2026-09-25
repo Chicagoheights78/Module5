@@ -1,0 +1,12 @@
+# M5P3
+quantity = int(input("Enter number of books: "))
+unit_price = float(input("Enter the cost per book: "))
+order_total = quantity * unit_price
+if order_total > 50.00:
+    shipping_price = 0.00
+else:
+    shipping_price = 25.00
+
+print("\n--- Summary ---")
+print(f"Order Total:     ${order_total:.2f}")
+print(f"Shipping Price:  ${shipping_price:.2f}")

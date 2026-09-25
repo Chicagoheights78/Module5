@@ -1,0 +1,14 @@
+# M5P4
+unit_name = input("Enter appliance name: ")
+unit_price = float(input("Enter appliance cost: "))
+if unit_price > 1000.00:
+    warranty_percent = .1
+else:
+    warranty_percent = .05
+warranty_total = warranty_percent * unit_price
+total = warranty_total + unit_price
+print("\n--- Summary ---")
+print(f"Appliance Name:  {unit_name:}")
+print(f"Appliance Cost:  ${unit_price:.2f}")
+print(f"Warranty Cost:  ${warranty_total:.2f}")
+print(f"Total:  ${total:.2f}")

@@ -1,0 +1,18 @@
+# M5P5
+last_name = input("Enter last name: ")
+dependants = int(input("Enter number of dependants: "))
+GI = float(input("Enter gross income: "))
+AGI = GI - (dependants * 12000)
+if AGI > 50000.00:
+   tax_rate = .2
+else:
+   tax_rate = .1
+income_tax = AGI * tax_rate 
+if income_tax < 0.00:
+   income_tax = 100
+print("\n--- Summary ---")
+print(f"Last Name:  {last_name:}")
+print(f"Gross Income:  ${GI:.2f}")
+print(f"Number of Dependants:  {dependants:}")
+print(f"Adjusted Gross Income:  ${AGI:.2f}")
+print(f"Income Tax:  ${income_tax:.2f}")
